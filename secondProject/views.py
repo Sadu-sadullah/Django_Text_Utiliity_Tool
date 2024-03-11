@@ -2,8 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Welcome!")
-    # return render(request, 'textutilizer.html')
+    return render(request, 'textutilizer.html')
 
 def removepunctuations(request):
     input_text = request.POST.get('text', 'default')  
