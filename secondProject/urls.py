@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.index, name = 'index'),
+    path('https://django-text-utiliity-tool.vercel.app/', views.index, name = 'index'),
     path('removepunctuations', views.removepunctuations, name = 'removepunctuations'),
 ]
